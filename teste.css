@@ -1,0 +1,229 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'iDroid';
+    src: url('fonte/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2? family= Bebas+Neue & display=swap');
+
+/**{
+    margin: 0px;
+    padding: 0px;
+}*/
+
+:root{
+    --cor0: #c5ebd6;
+    --cor1: #83E1AD;
+    --cor2: #3DDC84;
+    --cor3: #2FA866;
+    --cor4: #1A5C37;
+    --cor5: #063d1e;
+    --fonte0: Arial, Helvetica, sans-serif;
+    --fonte1: 'Bebas Neue', cursive;
+    --fonte2: 'iDroid', sans-serif;
+}
+
+body{
+    background-color: var(--cor0);
+    margin: 0px;
+    font-family: var(--fonte0);
+}
+
+
+header {
+    background-image: linear-gradient(to top, var(--cor5), var(--cor2));
+    color: white;
+    font-family: var(--fonte0);
+    min-height: 130px;
+}
+
+#tituloprincipal {
+    margin: 0px;
+    padding-top: 22px;
+    padding-bottom: 12px;
+    text-align: center;
+    font-size: 3em;
+    text-shadow: 2.5px 2.5px 0px rgba(0, 0, 0, 0.37)
+}
+
+#introducao {
+    margin: 0px;
+    margin: auto;
+    padding-bottom: 18px;
+    text-align: center;
+    max-width: 300px;
+    text-shadow: 1.8px 1.8px 0px rgba(0, 0, 0, 0.37);
+}
+
+nav {
+    background-color: var(--cor5);
+    text-indent: 15px;
+    padding-bottom: 8px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.342);
+}
+
+nav > a {
+    text-decoration: none;
+    color: var(--cor1);
+    padding: 5px;
+    margin-right: 5px;
+    transition-duration: 0.3s;
+}
+
+nav > a:hover {
+    background-color: var(--cor1);
+    color: var(--cor5);
+    border-radius: 5px;
+}
+
+main {
+    background-color: snow;
+    min-width: 320px;
+    max-width: 800px;
+    margin: auto;
+    padding-bottom: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+article {
+    text-indent: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+    line-height: 1.8em;
+}
+
+#tituloartigo {
+    font-family: var(--fonte2);
+    color: var(--cor5);
+    margin: 0px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    max-width: 570px;
+}
+
+.titulo {
+    font-family: var(--fonte2);
+    color: var(--cor5);
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    padding: 2px 0px;
+    margin: 0px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+
+main a {
+    text-decoration: none;
+    background-color: var(--cor1);
+    color: var(--cor4);
+    padding: 2px 4px;
+    border-radius: 2px;
+}
+
+main a:hover {
+    background-color: var(--cor3);
+    color: var(--cor0);
+    transition-duration: 0.3s;
+}
+
+.destaque {
+    font-weight: bold;
+    color: var(--cor4);
+}
+
+.externo::after {
+    content: '\00A0\1f517';
+}
+
+
+aside { 
+    background-color: var(--cor0);
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px black;
+}
+
+aside p {
+    padding: 8px 15px
+}
+
+.extra {
+    font-family: var(--fonte1);
+    background-color: var(--cor4);
+    color: white;
+    margin: 0px;
+    padding: -10px -1px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+ul {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+footer {
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 5px;
+    box-shadow: 0px 0px 10px black;
+}
+
+footer p {
+    margin: 0px;
+    padding: 2px 0px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+img {
+    width: 100%;
+}
+
+.center {
+    display: block;
+    margin: auto;
+}
+
+.droid {
+    display: block;
+    margin: auto;
+    max-width: 390px;
+}
+
+#video {
+    background-color: var(--cor4);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 57%;
+    position: relative;
+}
+
+#video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
